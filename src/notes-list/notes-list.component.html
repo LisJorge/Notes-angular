@@ -1,0 +1,8 @@
+<div class="container">
+  <ul class="notes">
+    <li *ngFor="let noteItem of notesList">
+      <span class="note-title">{{ noteItem.title }}</span>
+      <span class="note-text">{{ noteItem.text }}</span>
+    </li>
+  </ul>
+</div>
