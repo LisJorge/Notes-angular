@@ -36,3 +36,47 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
+.form{
+  background-color:#a0cab5;
+  padding: 25px;
+}
+
+.form-title{
+  font-weight: bold;
+  font-size: medium;
+  text-align: center;
+  background-color: #f1edd0;
+  padding: 10px 0 5px 0;
+}
+
+.form-input{
+  font-weight: bold;
+  background-color: #f1edd0;
+  padding: 10px;
+}
+
+.form-input > textarea, .form-input > input {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-input > textarea{
+  width: 96%;
+}
+
+.form-submit{
+  padding-bottom: 10px;
+  background-color: #f1edd0;
+  text-align: center;
+}
+
+.form-submit > input{
+  background-color: #f38a8a;
+  border-radius: 3px;
+  padding: 8px 20px;
+  border: none;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

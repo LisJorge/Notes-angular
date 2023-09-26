@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NotesFormComponent } from 'src/notes-form/notes-form.component';
 import { NotesComponent } from 'src/notes-list/notes-list.component';
 
 @Component({
@@ -6,8 +7,7 @@ import { NotesComponent } from 'src/notes-list/notes-list.component';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [NotesComponent]
+  imports: [NotesComponent, NotesFormComponent]
 })
 export class AppComponent {
-  title = 'solo-learn-app';
 }

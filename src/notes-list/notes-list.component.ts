@@ -13,7 +13,7 @@ export class NotesComponent {
   notesList = Notes;
 
   show(id: number){
-    this.notesList.filter((note) => {
+    this.notesList.find((note) => {
       if(note.id == id){
         note.shouldShow = !note.shouldShow
       }

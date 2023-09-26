@@ -1,0 +1,28 @@
+<div class="form">
+  <div class="form-title">
+    <label>New note</label>
+  </div>
+  <form (ngSubmit)="submit()" #newNote="ngForm">
+    <div class="form-input">
+      <input
+        type="text"
+        required
+        [(ngModel)]="noteTitle"
+        placeholder="Title"
+        minlength="1"
+      />
+    </div>
+    <div class="form-input">
+      <textarea
+        required
+        [(ngModel)]="noteDescription"
+        placeholder="Description"
+        minlength="1"
+      ></textarea>
+    </div>
+    <p>{{ newNote.form.valid }}</p>
+    <div class="form-submit">
+      <input type="submit" value="Create" [disabled]="!newNote.form.valid" />
+    </div>
+  </form>
+</div>
