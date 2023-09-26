@@ -1,8 +1,12 @@
 <div class="container">
   <ul class="notes">
     <li *ngFor="let noteItem of notesList">
-      <span class="note-title">{{ noteItem.title }}</span>
-      <span class="note-text">{{ noteItem.text }}</span>
+      <span class="note-title" (click)="show(noteItem.id)" >{{ noteItem.title }}</span>
+      <div *ngIf="noteItem.shouldShow">
+        <span class="note-text">
+          {{ noteItem.text }}
+        </span>
+      </div>
     </li>
   </ul>
 </div>

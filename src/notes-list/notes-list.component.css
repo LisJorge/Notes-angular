@@ -1,22 +1,24 @@
 .notes {
-  background-color: antiquewhite;
+  background-color:#a0cab5;
   padding: 25px;
   list-style-type: none;
 }
 
 .note-title {
-  background-color: azure;
+  background-color: #f1edd0;
   border-radius: 5px;
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
   padding: 10px;
+  width: 800px;
 }
 .note-text {
-  background-color: aliceblue;
+  background-color: #f1edd0;
   border-radius: 5px;
   display: block;
   font-style: italic;
   margin-bottom: 10px;
-  padding: 20px;
+  padding: 20px 10px 20px 10px;
+  width: 800px;
 }
