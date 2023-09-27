@@ -1,6 +1,12 @@
 # MyNotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
+MyNotes is a simple application for notes creation built with Angular.
+
+## Features
+
+- ✨List all the created notes
+- ✨ Add new notes, forms includes simple validations
+
 
 ## Development server
 
