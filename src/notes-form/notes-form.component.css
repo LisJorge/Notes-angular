@@ -1,6 +1,11 @@
-input.ng-valid {
-    background-color: #fff;
-  }
-input.ng-invalid, textarea.ng-invalid {
-    background-color: #f58c84;
-  }
+/* Add application styles & imports to this file! */
+input.ng-valid, textarea.ng-valid {
+  border-left: 5px solid #79ba6a;
+}
+input.ng-invalid textarea.ng-invalid {
+  border-left: 5px solid #f58c84;
+}
+
+.form-submit > input{
+  margin: 0 3px 0 3px;
+}

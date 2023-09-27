@@ -2,12 +2,13 @@
   <div class="form-title">
     <label>New note</label>
   </div>
-  <form (ngSubmit)="submit()" #newNote="ngForm">
+  <form (ngSubmit)="submit()" [formGroup]="newNoteForm">
     <div class="form-input">
       <input
         type="text"
+        formControlName="noteTitle"
+        name="noteTitle"
         required
-        [(ngModel)]="noteTitle"
         placeholder="Title"
         minlength="1"
       />
@@ -15,14 +16,15 @@
     <div class="form-input">
       <textarea
         required
-        [(ngModel)]="noteDescription"
+        formControlName="noteDescription"
+        name="noteDescription"
         placeholder="Description"
         minlength="1"
       ></textarea>
     </div>
-    <p>{{ newNote.form.valid }}</p>
     <div class="form-submit">
-      <input type="submit" value="Create" [disabled]="!newNote.form.valid" />
+      <input type="submit" value="Create" [disabled]="!newNoteForm.valid" />
+      <input type="button" value="Clear" (click)="newNoteForm.reset()" />
     </div>
   </form>
 </div>
