@@ -1,7 +1,7 @@
 import { NgIf } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { Notes } from 'src/notes-list/sample-data';
 
 @Component({
@@ -9,7 +9,7 @@ import { Notes } from 'src/notes-list/sample-data';
   standalone: true,
   templateUrl: './notes-form.component.html',
   styleUrls: ['./notes-form.component.css', './../app/app.component.css'],
-  imports: [ FormsModule, NgIf, ReactiveFormsModule]
+  imports: [ FormsModule, NgIf, ReactiveFormsModule, RouterModule]
 })
 export class NotesFormComponent {
 

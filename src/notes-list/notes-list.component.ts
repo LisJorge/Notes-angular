@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { Notes } from './sample-data';
 import { NgFor, NgIf } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-notes-list',
   standalone: true,
   templateUrl: './notes-list.component.html',
-  styleUrls: ['./notes-list.component.css'],
-  imports: [ NgFor, NgIf ]
+  styleUrls: ['/./../app/app.component.css', './notes-list.component.css'],
+  imports: [ NgFor, NgIf, RouterModule ]
 })
 export class NotesListComponent {
   notesList = Notes;

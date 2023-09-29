@@ -64,13 +64,13 @@ body {
   width: 96%;
 }
 
-.form-submit, .general-button{
+.form-submit {
   padding-bottom: 10px;
   background-color: #f1edd0;
   text-align: center;
 }
 
-.form-submit > input, .general-button{
+.form-submit > input, .general-button > button{
   background-color: #f38a8a;
   border-radius: 3px;
   padding: 8px 20px;
@@ -79,4 +79,8 @@ body {
   text-decoration: none;
   cursor: pointer;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.general-button{
+  display:flex; justify-content: center;
 }

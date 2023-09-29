@@ -1,4 +1,8 @@
 <div class="container">
+  <br>
+  <div class="general-button">
+    <button routerLink="./new">Add New</button>
+  </div>
   <ul class="notes">
     <li *ngFor="let noteItem of notesList">
       <span class="note-title" (click)="show(noteItem.id)" >{{ noteItem.title }}</span>
