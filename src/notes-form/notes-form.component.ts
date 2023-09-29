@@ -1,6 +1,7 @@
 import { NgIf } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Notes } from 'src/notes-list/sample-data';
 
 @Component({
@@ -11,6 +12,9 @@ import { Notes } from 'src/notes-list/sample-data';
   imports: [ FormsModule, NgIf, ReactiveFormsModule]
 })
 export class NotesFormComponent {
+
+  router = inject(Router);
+
   newNoteForm = new FormGroup({
     noteTitle: new FormControl('', Validators.required),
     noteDescription: new FormControl('', Validators.required),
@@ -33,7 +37,12 @@ export class NotesFormComponent {
         text: newNoteData.description!,
       };
       Notes.unshift(newNote);
-      this.newNoteForm.reset();
+      //this.newNoteForm.reset(); No longer needed
+      this.goBackHome();
     }
+  }
+
+  goBackHome(){
+    this.router.navigateByUrl('');
   }
 }

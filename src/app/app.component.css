@@ -64,13 +64,13 @@ body {
   width: 96%;
 }
 
-.form-submit{
+.form-submit, .general-button{
   padding-bottom: 10px;
   background-color: #f1edd0;
   text-align: center;
 }
 
-.form-submit > input{
+.form-submit > input, .general-button{
   background-color: #f38a8a;
   border-radius: 3px;
   padding: 8px 20px;

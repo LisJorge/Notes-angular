@@ -9,7 +9,7 @@ import { NgFor, NgIf } from '@angular/common';
   styleUrls: ['./notes-list.component.css'],
   imports: [ NgFor, NgIf ]
 })
-export class NotesComponent {
+export class NotesListComponent {
   notesList = Notes;
 
   show(id: number){
