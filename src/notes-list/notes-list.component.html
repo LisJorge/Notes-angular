@@ -1,11 +1,16 @@
 <div class="container">
-  <br>
+  <br />
   <div class="general-button">
     <button routerLink="./new">Add New</button>
   </div>
   <ul class="notes">
     <li *ngFor="let noteItem of notesList">
-      <span class="note-title" (click)="show(noteItem.id)" >{{ noteItem.title }}</span>
+      <div class="note-title" >
+        <span (click)="show(noteItem.id)" class="note-title-item">{{
+          noteItem.title
+        }}</span>
+        <button [routerLink]="['/notes', noteItem.id]" class="note-button"><b>Details</b></button>
+      </div>
       <div *ngIf="noteItem.shouldShow">
         <span class="note-text">
           {{ noteItem.text }}

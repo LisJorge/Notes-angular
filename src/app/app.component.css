@@ -84,3 +84,10 @@ body {
 .general-button{
   display:flex; justify-content: center;
 }
+
+.note-button{
+  background-color: #f1edd0;
+  border: none;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
