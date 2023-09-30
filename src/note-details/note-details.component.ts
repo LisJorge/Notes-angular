@@ -1,7 +1,7 @@
 import { NgIf } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
-import { Notes } from 'src/notes-list/sample-data';
+import { Notes } from '@notes-list/sample-data';
 
 @Component({
   selector: 'app-note-details',

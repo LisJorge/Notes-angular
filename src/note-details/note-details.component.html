@@ -1,7 +1,10 @@
 <br>
-<div *ngIf="note" id="note-container">
+<div *ngIf="note" id="note-container green-background">
     <span class="note-title">{{note.title}}</span>
-    <span class="note-text">ID: {{note.id}}</span>
+    <span class="note-title">ID: {{note.id}}</span>
     <span class="note-text">{{note.text}}</span>
+</div>
+<div class="general-button">
+    <button routerLink="">Home</button>
 </div>
 <br>
