@@ -1,5 +1,6 @@
 # MyNotes
 
+Angular practice.
 MyNotes is a simple application for notes creation built with Angular.
 
 ## Features
