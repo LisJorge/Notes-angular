@@ -7,7 +7,7 @@ import { Notes } from 'src/notes-list/sample-data';
   selector: 'app-note-details',
   standalone: true,
   templateUrl: './note-details.component.html',
-  styleUrls: ['/./../app/app.component.css'],
+  styleUrls: ['/./../app/app.component.css', '/./../notes-list/notes-list.component.css'],
   imports: [RouterModule, NgIf],
 })
 export class NoteDetailsComponent {

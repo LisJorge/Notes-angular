@@ -9,7 +9,7 @@
         <span (click)="show(noteItem.id)" class="note-title-item">{{
           noteItem.title
         }}</span>
-        <button [routerLink]="['/notes', noteItem.id]" class="note-button"><b>Details</b></button>
+        <button [routerLink]="['/note', noteItem.id]" class="note-button"><b>Details</b></button>
       </div>
       <div *ngIf="noteItem.shouldShow">
         <span class="note-text">
