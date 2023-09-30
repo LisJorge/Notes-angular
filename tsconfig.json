@@ -2,7 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -19,6 +19,12 @@
     "target": "ES2022",
     "module": "ES2022",
     "useDefineForClassFields": false,
+    "paths": {
+      "@app/*": ["app/*"],
+      "@note-details/*": ["note-details/*"],
+      "@notes-form/*": ["notes-form/*"],
+      "@notes-list/*": ["notes-list/*"]
+    },
     "lib": [
       "ES2022",
       "dom"
